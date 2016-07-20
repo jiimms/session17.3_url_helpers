@@ -20,8 +20,12 @@
 			<%=link_to "List of Pages", pages_path%>
 		</p>
 
-		<p><h3>button_to</h3>
-		</p><%= button_to "Create New Page", new_page_path, :method => :get  %>
+		<p><h3>button_to</h3><br>
+		Generates a form containing a single button that submits to the URL created by the set of options. </p>
+
+		<p><%= button_to "Create New Page", new_page_path, :method => :get  %></p>
+
+		<p>button_to uses post method by default while link_to uses get method.</p>
 
 
 	</article>							
